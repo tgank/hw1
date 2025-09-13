@@ -7,7 +7,7 @@ struct Node
   int value;
   Node* next;
 
-  /**
+  /*
    * Initializing constructor
    */
   Node(int v, Node* n)
