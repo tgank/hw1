@@ -19,7 +19,7 @@ void split(Node*& in, Node*& odds, Node*& evens)
   /* Add code here */
 // WRITE YOUR CODE HERE
 
-  if (in == NULL){ //Base case
+  if (in == nullptr){ //Base case
     return; 
   }
   else if(in -> value % 2 ==0){
@@ -28,7 +28,7 @@ void split(Node*& in, Node*& odds, Node*& evens)
     in = in -> next; //move in to next NODE
     add_even -> next = nullptr; 
 
-    if(evens == NULL){ //first number being put into evens list
+    if(evens == nullptr){ //first number being put into evens list
       evens = add_even;
     }
     else{ 
@@ -41,7 +41,7 @@ void split(Node*& in, Node*& odds, Node*& evens)
     in = in -> next; //move in to next NODE
     add_odd -> next = nullptr; 
 
-    if(odds == NULL){ //first number being put into odds list
+    if(odds == nullptr){ //first number being put into odds list
       odds = add_odd;
     }
     else{
@@ -54,7 +54,7 @@ void split(Node*& in, Node*& odds, Node*& evens)
 
 /* If you needed a helper function, write it here */
 void addToEnd(Node*& func, Node* add){ //make sure you are calling evens/odds as func
-  if(func -> next == NULL){
+  if(func -> next == nullptr){
     //reached the last Node of even/odd
     func -> next = add;
     return;
