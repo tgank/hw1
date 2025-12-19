@@ -13,6 +13,7 @@ the function below should be the only one in this file.
 #include "split.h"
 
 /* Add a prototype for a helper function here if you need */
+void addToEnd(Node*& func, Node* add);
 
 void split(Node*& in, Node*& odds, Node*& evens)
 {
