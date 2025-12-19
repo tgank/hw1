@@ -41,13 +41,12 @@ void split(Node*& in, Node*& odds, Node*& evens)
     in = in -> next; //move in to next NODE
     add_odd -> next = nullptr; 
 
-    if(odds == NULL){ //first number being put into evens list
+    if(odds == NULL){ //first number being put into odds list
       odds = add_odd;
     }
     else{
       addToEnd(odds, add_odd);
     }
-    in = in -> next; //move to next Node
   }
 
   split(in, odds, evens); //recursive call
